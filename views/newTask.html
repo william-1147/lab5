@@ -1,0 +1,41 @@
+<!DOCTYPE <!DOCTYPE html>
+<html class="newt">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+            <a href="/">Home Page</a>
+            <a href="/newTask">New Task</a>
+            <a href="/listTask">List Task</a>
+            <a href="/deleteTask">Delete Task</a>
+            <a href="/deleteComplete">Delete Complete</a>
+            <a href="/updateTask">Update Task</a>
+</div>
+    <form action="/newTask" method="POST">
+
+        Task Name:
+        <input type="text" method="POST" name="tname"/></br>
+        Assign To:
+        <input type="text" method="POST" name="assto"/></br>
+        Due Date:
+        <input type="date" method="POST" name="due"/></br>
+        Task Status
+        <select name ="stat">
+            <option value="Complete">Complete</option>
+            <option value="Inprogress">Inprogress</option>
+        </select></br>
+        Task Description:
+        <input type="text" method="POST" name="desc"/></br>
+        
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+
+</html>

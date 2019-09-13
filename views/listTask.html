@@ -1,0 +1,55 @@
+<html class="lt">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>listTask</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+        <div class="navbar">
+                <a href="/">Home Page</a>               
+                <a href="/newTask">New Task</a>
+                <a href="/listTask">List Task</a>
+                <a href="/deleteTask">Delete Task</a>
+                <a href="/updateTask">Update Task</a>
+</div>
+    
+    <table>
+            <tr>
+                <td>Task ID</td>
+                <td>Name</td>
+                <td>Assign To</td>
+                <td>Due Date</td>
+                <td>Task Status</td>
+                <td>Description</td>
+            </tr>
+            <% for ( let i = 0; i< taskDB.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= taskDB[i].id %>
+                    </td>
+                    <td>
+                        <%= taskDB[i].name %>
+                    </td>
+                    <td>
+                        <%= taskDB[i].assign %>
+                    </td>
+                    <td>
+                        <%= taskDB[i].dueDate %>
+                    </td>
+                    <td>
+                        <%= taskDB[i].status %>
+                    </td>
+                    <td>
+                        <%= taskDB[i].description %>
+                    </td>
+                </tr>
+                <%}%>
+    </table>
+
+</body>
+
+</html>
