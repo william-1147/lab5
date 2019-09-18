@@ -1,18 +1,19 @@
-<html class="upt">
+<html>
         <head>
                 <link rel="stylesheet" href="styles.css">
         </head>
 <body>
-    <div class="navbar">
-                <a href="/">Home Page</a>        
-                <a href="/newTask">New Task</a>
-                <a href="/listTask">List Task</a>
-                <a href="/deleteTask">Delete Task</a>
-                <a href="/updateTask">Update Task</a>
-</div>
-    <form action="/updateTask" method="POST">
-        Task ID <input type="text" method="POST" name="id" /> </br>
-        Task Status <input type="text" method="POST" name="newStatus" /> </br>
+    <h1>Update Task</h1></br>
+    <h1>
+            <a href="/">Home Page</a>
+            <a href="/newTask">New Task</a>
+            <a href="/listTask">List Task</a>
+            <a href="/updateTask">Update Task</a>
+            <a href="/deleteTask">Delete Task</a>
+    </h1>
+    <form action="/updateTaskdata" method="POST">
+        Task ID <input type="number" method="POST" name="taskID" /> </br>
+        Task Status <input type="text" method="POST" name="newtstatus" /> </br>
         
         <input type="submit" value="Submit" /> </br>
     </form>

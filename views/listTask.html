@@ -1,21 +1,21 @@
-<html class="lt">
+<html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>listTask</title>
+    <title>TopApp</title>
     
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-        <div class="navbar">
-                <a href="/">Home Page</a>               
-                <a href="/newTask">New Task</a>
-                <a href="/listTask">List Task</a>
-                <a href="/deleteTask">Delete Task</a>
-                <a href="/updateTask">Update Task</a>
-</div>
+            <h2>
+                    <a href="/">Home Page</a>
+                    <a href="/newTask">New Task</a>
+                    <a href="/listTask">List Task</a>
+                    <a href="/updateTask">Update Task</a>
+                    <a href="/deleteTask">Delete Task</a>
+            </h2>
     
     <table>
             <tr>
@@ -26,25 +26,25 @@
                 <td>Task Status</td>
                 <td>Description</td>
             </tr>
-            <% for ( let i = 0; i< taskDB.length;i++){ %>
+            <% for ( let i = 0; i< taskDb.length;i++){ %>
                 <tr>
                     <td>
-                        <%= taskDB[i].id %>
+                        <%= taskDb[i].id %>
                     </td>
                     <td>
-                        <%= taskDB[i].name %>
+                        <%= taskDb[i].taskName %>
                     </td>
                     <td>
-                        <%= taskDB[i].assign %>
+                        <%= taskDb[i].assignTo %>
                     </td>
                     <td>
-                        <%= taskDB[i].dueDate %>
+                        <%= taskDb[i].taskDue %>
                     </td>
                     <td>
-                        <%= taskDB[i].status %>
+                        <%= taskDb[i].taskStatus %>
                     </td>
                     <td>
-                        <%= taskDB[i].description %>
+                        <%= taskDb[i].taskDesc %>
                     </td>
                 </tr>
                 <%}%>

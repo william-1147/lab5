@@ -1,23 +1,19 @@
-<html class="dt">
+<html>
 <head>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
+    <h1>Delete Task</h1></br>
+    <h1>
             <a href="/">Home Page</a>
-           
             <a href="/newTask">New Task</a>
             <a href="/listTask">List Task</a>
-            <a href="/deleteTask">Delete Task</a>
             <a href="/updateTask">Update Task</a>
-</div>
-    <form action="/deleteTask" method="POST">
-        Task ID <input type="text" method="POST" name="id" /> </br>
+            <a href="/deleteTask">Delete Task</a>
+    </h1>
+    <form action="/deletetaskdata" method="POST">
+        Task ID <input type="number" method="POST" name="taskID" /> </br>
         <input type="submit" value="Submit" /> </br>
-    </form>
-    <form action="/deleteAll" method="POST">
-        
-        <input type="submit" value="Delete Completed Tasks" /> </br>
     </form>
 </body>
 </html>

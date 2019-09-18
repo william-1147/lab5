@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>TopApp</title>
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<ul>
+                <li><a href="newTask.html">Add new task</a></li>
+                <li><a href="index.html">Home</a></li>
+			</ul>
+        </nav>
+    </header>
+    
+    <table>
+            <tr>
+                <td>Name</td>
+                <td>Due Date</td>
+                <td>Description</td>
+            </tr>
+            <% for ( var i =0; i< taskDb.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= taskDb[i].taskName %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].taskDue %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].taskDesc %>
+                    </td>
+                </tr>
+                <% }%>
+    </table>
+
+</body>
+
+</html>
